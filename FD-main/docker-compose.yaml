@@ -12,7 +12,7 @@ services:
            - /docker/emps/mysql:/var/lib/mysql
      restart: always
      environment:
-       MYSQL_ROOT_PASSWORD: c0nygre
+       MYSQL_ROOT_PASSWORD: C0nygre-C0nygre
      command: --explicit_defaults_for_timestamp
 
    app:
