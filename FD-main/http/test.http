@@ -1,0 +1,38 @@
+GET http://localhost:8080/fundManager/list
+Accept: application/json
+
+###/Terry Jones
+
+
+GET http://localhost:8080/fundManager/list-name/Terry Jones
+Accept: application/json
+
+###
+
+GET http://localhost:8080/fundManager/list-id/1
+Accept: application/json
+
+###/
+POST http://localhost:8080/fundManager/post
+Content-Type: application/x-www-form-urlencoded
+
+name=Test test
+
+###/Security
+
+POST http://localhost:8080/Security/post
+Content-Type: application/x-www-form-urlencoded
+
+symbol=MS
+###
+
+POST http://localhost:8080/fund/post
+Content-Type: application/x-www-form-urlencoded
+
+employeeId=2&name=Grobal Growth 2
+
+###fundid,int securityid,int quantity
+POST http://localhost:8080/position/post
+Content-Type: application/x-www-form-urlencoded
+
+fundid=1&securityid=1&quantity=100
