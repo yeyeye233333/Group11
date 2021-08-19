@@ -22,6 +22,6 @@ services:
        dockerfile: Dockerfile-app
      image: emps/app:1.0.0
      ports:
-       - "8081:8081"
+       - "8888:8888"
      links:
        - mysql:mysql
